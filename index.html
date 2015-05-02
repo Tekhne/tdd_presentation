@@ -1,408 +1,510 @@
 <!doctype html>
 <html lang="en">
 
-	<head>
-		<meta charset="utf-8">
+  <head>
+    <meta charset="utf-8">
 
-		<title>reveal.js - The HTML Presentation Framework</title>
+    <title>reveal.js - The HTML Presentation Framework</title>
 
-		<meta name="description" content="A framework for easily creating beautiful presentations using HTML">
-		<meta name="author" content="Hakim El Hattab">
+    <meta name="description" content="A framework for easily creating beautiful presentations using HTML">
+    <meta name="author" content="Hakim El Hattab">
 
-		<meta name="apple-mobile-web-app-capable" content="yes" />
-		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
 
-		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
 
-		<link rel="stylesheet" href="css/reveal.css">
-		<link rel="stylesheet" href="css/theme/black.css" id="theme">
+    <link rel="stylesheet" href="css/reveal.css">
+    <link rel="stylesheet" href="css/theme/moon.css" id="theme">
 
-		<!-- Code syntax highlighting -->
-		<link rel="stylesheet" href="lib/css/zenburn.css">
+    <!-- Code syntax highlighting -->
+    <link rel="stylesheet" href="lib/css/zenburn.css">
 
-		<!-- Printing and PDF exports -->
-		<script>
-			var link = document.createElement( 'link' );
-			link.rel = 'stylesheet';
-			link.type = 'text/css';
-			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
-			document.getElementsByTagName( 'head' )[0].appendChild( link );
-		</script>
+    <!-- Printing and PDF exports -->
+    <script>
+      var link = document.createElement( 'link' );
+      link.rel = 'stylesheet';
+      link.type = 'text/css';
+      link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+      document.getElementsByTagName( 'head' )[0].appendChild( link );
+    </script>
 
-		<!--[if lt IE 9]>
-		<script src="lib/js/html5shiv.js"></script>
-		<![endif]-->
-	</head>
+    <!--[if lt IE 9]>
+    <script src="lib/js/html5shiv.js"></script>
+    <![endif]-->
+  </head>
 
-	<body>
+  <body>
 
-		<div class="reveal">
+    <div class="reveal">
 
-			<!-- Any section element inside of this container is displayed as a slide -->
-			<div class="slides">
-				<section>
-					<h1>Reveal.js</h1>
-					<h3>The HTML Presentation Framework</h3>
-					<p>
-						<small>Created by <a href="http://hakim.se">Hakim El Hattab</a> / <a href="http://twitter.com/hakimel">@hakimel</a></small>
-					</p>
-				</section>
+      <!-- Any section element inside of this container is displayed as a slide -->
+      <div class="slides">
 
-				<section>
-					<h2>Hello There</h2>
-					<p>
-						reveal.js enables you to create beautiful interactive slide decks using HTML. This presentation will show you examples of what it can do.
-					</p>
-				</section>
+        <section>
+          <h1>Test-Driven Development</h1>
+          <p>
+            How I learned to stop worrying and love the workflow.
+          </p>
+        </section>
 
-				<!-- Example of nested vertical slides -->
-				<section>
-					<section>
-						<h2>Vertical Slides</h2>
-						<p>Slides can be nested inside of each other.</p>
-						<p>Use the <em>Space</em> key to navigate through all slides.</p>
-						<br>
-						<a href="#" class="navigate-down">
-							<img width="178" height="238" data-src="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png" alt="Down arrow">
-						</a>
-					</section>
-					<section>
-						<h2>Basement Level 1</h2>
-						<p>Nested slides are useful for adding additional detail underneath a high level horizontal slide.</p>
-					</section>
-					<section>
-						<h2>Basement Level 2</h2>
-						<p>That's it, time to go back up.</p>
-						<br>
-						<a href="#/2">
-							<img width="178" height="238" data-src="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png" alt="Up arrow" style="-webkit-transform: rotate(180deg);">
-						</a>
-					</section>
-				</section>
+        <section>
+          <section>
+            <h3>Why do automated testing?</h3>
+          </section>
 
-				<section>
-					<h2>Slides</h2>
-					<p>
-						Not a coder? Not a problem. There's a fully-featured visual editor for authoring these, try it out at <a href="http://slides.com" target="_blank">http://slides.com</a>.
-					</p>
-				</section>
+          <section>
+            <h4>It's better than not.</h4>
+            <p>
+              <small>
+                We don't type and deploy without <strong>any</strong> tests.
+                <br />
+                Manual testing is expensive, tedious, and error-prone.
+                <br />
+                <br />
+                Automated testing minimizes those problems.
+                <br />
+                <br />
+                Test-driven development (TDD) is an effective
+                <br />
+                method of creating automated tests.
+              </small>
+            </p>
+          </section>
+        </section>
 
-				<section>
-					<h2>Point of View</h2>
-					<p>
-						Press <strong>ESC</strong> to enter the slide overview.
-					</p>
-					<p>
-						Hold down alt and click on any element to zoom in on it using <a href="http://lab.hakim.se/zoom-js">zoom.js</a>. Alt + click anywhere to zoom back out.
-					</p>
-				</section>
+        <section>
+          <section>
+            <h3>What is TDD?</h3>
+          </section>
 
-				<section>
-					<h2>Touch Optimized</h2>
-					<p>
-						Presentations look great on touch devices, like mobile phones and tablets. Simply swipe through your slides.
-					</p>
-				</section>
+          <section>
+            <h4>Red, green, refactor.</h4>
+            <p>
+              <small>
+                <br />
+                <br />
+                Write the tests <strong>before</strong> the code.
+                <br />
+                Let testing feedback <strong>drive</strong> development.
+              </small>
+            </p>
+          </section>
 
-				<section data-markdown>
-					<script type="text/template">
-						## Markdown support
+          <section>
+            <h4>Zen coding.</h4>
+            <p>
+              <small>
+                Workflow and happiness are respected.
+              </small>
+            </p>
+          </section>
+        </section>
 
-						Write content using inline or external Markdown.
-						Instructions and more info available in the [readme](https://github.com/hakimel/reveal.js#markdown).
+        <section>
+          <section>
+            <h3>Why do TDD?</h3>
+          </section>
 
-						```
-						<section data-markdown>
-						  ## Markdown support
+          <section>
+            <h4>Helps minimize lifespan of defects.</h4>
+            <p>
+              <small>
+                Defects are usually caught at creation time.
+                <br />
+                When they're the least painful and expensive.
+                <br />
+                <br />
+                Code is more likely to be correct in production.
+              </small>
+            </p>
+          </section>
 
-						  Write content using inline or external Markdown.
-						  Instructions and more info available in the [readme](https://github.com/hakimel/reveal.js#markdown).
-						</section>
-						```
-					</script>
-				</section>
+          <section>
+            <table>
+              <tbody>
+                <tr>
+                  <td></td>
+                  <td><strong>Requirements</strong></td>
+                  <td><strong>Architecture</strong></td>
+                  <td><strong>Construction</strong></td>
+                  <td><strong>System Test</strong></td>
+                  <td><strong>Release</strong></td>
+                </tr>
+                <tr>
+                  <td><strong>Requirements</strong></td>
+                  <td>1</td>
+                  <td class="alert">3</td>
+                  <td class="alert">5-10</td>
+                  <td class="alert">10</td>
+                  <td class="alert">10-100</td>
+                </tr>
+                <tr>
+                  <td><strong>Architecture</strong></td>
+                  <td>&mdash;</td>
+                  <td>1</td>
+                  <td class="alert">10</td>
+                  <td class="alert">15</td>
+                  <td class="alert">25-100</td>
+                </tr>
+                <tr>
+                  <td><strong>Construction</strong></td>
+                  <td>&mdash;</td>
+                  <td>&mdash;</td>
+                  <td>1</td>
+                  <td class="alert">10</td>
+                  <td class="alert">10-25</td>
+                </tr>
+              </tbody>
+              <caption>
+                Cost multiplier for defect fixes based on creation and detection times.
+                <br />
+                —Source: Hewlett-Packard, IMB, Hughes Aircraft, TRW, et al 1976-2004
+              </caption>
+            </table>
+          </section>
 
-				<section>
-					<section id="fragments">
-						<h2>Fragments</h2>
-						<p>Hit the next arrow...</p>
-						<p class="fragment">... to step through ...</p>
-						<p><span class="fragment">... a</span> <span class="fragment">fragmented</span> <span class="fragment">slide.</span></p>
+          <section>
+            <blockquote>
+              <small>
+                &ldquo;TDD teams produced code that was 60 to 90 percent
+                <br />
+                better in terms of defect density than non-TDD teams.&rdquo;
+                <br />
+                <br />
+                &mdash;Microsoft Research, 2008
+              </small>
+            </blockquote>
+          </section>
 
-						<aside class="notes">
-							This slide has fragments which are also stepped through in the notes window.
-						</aside>
-					</section>
-					<section>
-						<h2>Fragment Styles</h2>
-						<p>There's different types of fragments, like:</p>
-						<p class="fragment grow">grow</p>
-						<p class="fragment shrink">shrink</p>
-						<p class="fragment roll-in">roll-in</p>
-						<p class="fragment fade-out">fade-out</p>
-						<p class="fragment current-visible">current-visible</p>
-						<p class="fragment highlight-red">highlight-red</p>
-						<p class="fragment highlight-blue">highlight-blue</p>
-					</section>
-				</section>
+          <section>
+            <h4>Increases test coverage.</h4>
+            <p>
+              <small>
+                If we rarely write code except to make a failing test pass,
+                <br />
+                then most of the code will be covered by tests.
+              </small>
+            </p>
+          </section>
 
-				<section id="transitions">
-					<h2>Transition Styles</h2>
-					<p>
-						You can select from different transitions, like: <br>
-						<a href="?transition=none#/transitions">None</a> -
-						<a href="?transition=fade#/transitions">Fade</a> -
-						<a href="?transition=slide#/transitions">Slide</a> -
-						<a href="?transition=convex#/transitions">Convex</a> -
-						<a href="?transition=concave#/transitions">Concave</a> -
-						<a href="?transition=zoom#/transitions">Zoom</a>
-					</p>
-				</section>
+          <section>
+            <h4>Helps improve design.</h4>
+            <p>
+              <small>
+                Tests are the first consumer of components.
+                <br />
+                If tests are easy to write, then code is usually easier to maintain.
+                <br />
+                Tests enable safe refactoring both now and later.
+              </small>
+            </p>
+          </section>
 
-				<section id="themes">
-					<h2>Themes</h2>
-					<p>
-						reveal.js comes with a few themes built in: <br>
-						<!-- Hacks to swap themes after the page has loaded. Not flexible and only intended for the reveal.js demo deck. -->
-						<a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/black.css'); return false;">Black (default)</a> -
-						<a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/white.css'); return false;">White</a> -
-						<a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/league.css'); return false;">League</a> -
-						<a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/sky.css'); return false;">Sky</a> -
-						<a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/beige.css'); return false;">Beige</a> -
-						<a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/simple.css'); return false;">Simple</a> <br>
-						<a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/serif.css'); return false;">Serif</a> -
-						<a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/night.css'); return false;">Night</a> -
-						<a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/moon.css'); return false;">Moon</a> -
-						<a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/solarized.css'); return false;">Solarized</a>
-					</p>
-				</section>
+          <section>
+            <h4>Increases agility.</h4>
 
-				<section>
-					<section data-background="#dddddd">
-						<h2>Slide Backgrounds</h2>
-						<p>
-							Set <code>data-background="#dddddd"</code> on a slide to change the background color. All CSS color formats are supported.
-						</p>
-						<a href="#" class="navigate-down">
-							<img width="178" height="238" data-src="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png" alt="Down arrow">
-						</a>
-					</section>
-					<section data-background="https://s3.amazonaws.com/hakim-static/reveal-js/image-placeholder.png">
-						<h2>Image Backgrounds</h2>
-						<pre><code>&lt;section data-background="image.png"&gt;</code></pre>
-					</section>
-					<section data-background="https://s3.amazonaws.com/hakim-static/reveal-js/image-placeholder.png" data-background-repeat="repeat" data-background-size="100px">
-						<h2>Tiled Backgrounds</h2>
-						<pre><code style="word-wrap: break-word;">&lt;section data-background="image.png" data-background-repeat="repeat" data-background-size="100px"&gt;</code></pre>
-					</section>
-					<section data-background-video="https://s3.amazonaws.com/static.slid.es/site/homepage/v1/homepage-video-editor.mp4,https://s3.amazonaws.com/static.slid.es/site/homepage/v1/homepage-video-editor.webm" data-background-color="#000000">
-						<div style="background-color: rgba(0, 0, 0, 0.9); color: #fff; padding: 20px;">
-							<h2>Video Backgrounds</h2>
-							<pre><code style="word-wrap: break-word;">&lt;section data-background-video="video.mp4,video.webm"&gt;</code></pre>
-						</div>
-					</section>
-				</section>
+            <p>
+              <small>
+                It’s hard to have agility without clean code.
+                <br />
+                It’s hard to have clean code without refactoring.
+                <br />
+                It’s hard to safely refactor without automated tests.
+              </small>
+            </p>
+          </section>
 
-				<section data-transition="slide" data-background="#4d7e65" data-background-transition="zoom">
-					<h2>Background Transitions</h2>
-					<p>
-						Different background transitions are available via the backgroundTransition option. This one's called "zoom".
-					</p>
-					<pre><code>Reveal.configure({ backgroundTransition: 'zoom' })</code></pre>
-				</section>
+          <section>
+            <h4>Documents code.</h4>
+            <p>
+              <small>
+                Examples of code in tests must be correct.
+                <br />
+                Well written tests help us readily understand the code.
+                <br />
+                Due to good test coverage, most code will be documented this way.
+              </small>
+            </p>
+          </section>
 
-				<section data-transition="slide" data-background="#b5533c" data-background-transition="zoom">
-					<h2>Background Transitions</h2>
-					<p>
-						You can override background transitions per-slide.
-					</p>
-					<pre><code style="word-wrap: break-word;">&lt;section data-background-transition="zoom"&gt;</code></pre>
-				</section>
+          <section>
+            <h4>Helps us focus.</h4>
 
-				<section>
-					<h2>Pretty Code</h2>
-					<pre><code data-trim contenteditable>
-function linkify( selector ) {
-  if( supports3DTransforms ) {
+            <p>
+              <small>
+                Failing tests tell us what to work on.
+                <br />
+                Focus equals speed.
+              </small>
+            </p>
+          </section>
 
-    var nodes = document.querySelectorAll( selector );
+          <section>
+            <h4>Helps us finish.</h4>
 
-    for( var i = 0, len = nodes.length; i &lt; len; i++ ) {
-      var node = nodes[i];
+            <p>
+              <small>
+                Passing tests tell us when we’re done.
+                <br />
+                Minimizes slapdash code.
+                <br />
+                Minimizes gold-plated code.
+              </small>
+            </p>
+          </section>
 
-      if( !node.className ) {
-        node.className += ' roll';
-      }
-    }
-  }
-}
-					</code></pre>
-					<p>Code syntax highlighting courtesy of <a href="http://softwaremaniacs.org/soft/highlight/en/description/">highlight.js</a>.</p>
-				</section>
+          <section>
+            <h4>Fosters predictable schedules.</h4>
+            <p>
+              <small>
+                Fewer defects means less debugging.
+                <br />
+                Debugging is a huge unknown.
+              </small>
+            </p>
+          </section>
+        </section>
 
-				<section>
-					<h2>Marvelous List</h2>
-					<ul>
-						<li>No order here</li>
-						<li>Or here</li>
-						<li>Or here</li>
-						<li>Or here</li>
-					</ul>
-				</section>
+        <section>
+          <section>
+            <h3>When to do TDD?</h3>
+          </section>
 
-				<section>
-					<h2>Fantastic Ordered List</h2>
-					<ol>
-						<li>One is smaller than...</li>
-						<li>Two is smaller than...</li>
-						<li>Three!</li>
-					</ol>
-				</section>
+          <section>
+            <h4>Do it all the time, from the start.</h4>
+            <p>
+              <small>
+                Test especially when it’s hard.
+                <br />
+                Difficulty testing is very useful design feedback.
+              </small>
+            </p>
+          </section>
+        </section>
 
-				<section>
-					<h2>Tabular Tables</h2>
-					<table>
-						<thead>
-							<tr>
-								<th>Item</th>
-								<th>Value</th>
-								<th>Quantity</th>
-							</tr>
-						</thead>
-						<tbody>
-							<tr>
-								<td>Apples</td>
-								<td>$1</td>
-								<td>7</td>
-							<tr>
-							<tr>
-								<td>Lemonade</td>
-								<td>$2</td>
-								<td>18</td>
-							<tr>
-							<tr>
-								<td>Bread</td>
-								<td>$3</td>
-								<td>2</td>
-							<tr>
-						</tbody>
-					</table>
-				</section>
+        <section>
+          <section>
+            <h3>How to do TDD?</h3>
+          </section>
 
-				<section>
-					<h2>Clever Quotes</h2>
-					<p>
-						These guys come in two forms, inline: <q cite="http://searchservervirtualization.techtarget.com/definition/Our-Favorite-Technology-Quotations">
-						&ldquo;The nice thing about standards is that there are so many to choose from&rdquo;</q> and block:
-					</p>
-					<blockquote cite="http://searchservervirtualization.techtarget.com/definition/Our-Favorite-Technology-Quotations">
-						&ldquo;For years there has been a theory that millions of monkeys typing at random on millions of typewriters would
-						reproduce the entire works of Shakespeare. The Internet has proven this theory to be untrue.&rdquo;
-					</blockquote>
-				</section>
+          <section>
+            <h4>Build a &ldquo;walking skeleton&rdquo; first.</h4>
+            <p>
+              <small>
+                Least amount of functionality that’s automatically
+                <br />
+                buildable, deployable, and testable end-to-end.
+                <br />
+                <br />
+                Architecture, infrastructure, and features should evolve together.
+              </small>
+            </p>
+          </section>
 
-				<section>
-					<h2>Intergalactic Interconnections</h2>
-					<p>
-						You can link between slides internally,
-						<a href="#/2/3">like this</a>.
-					</p>
-				</section>
+          <section>
+            <h4>Build outside to inside, inputs to outputs.</h4>
+            <p>
+              <small>
+                The user’s needs should come first.
+                <br />
+                Helps ensure we only build components users value.
+                <br />
+                (“User” could mean “developer,” or “computer.”)
+              </small>
+            </p>
+          </section>
 
-				<section>
-					<h2>Speaker View</h2>
-					<p>There's a <a href="https://github.com/hakimel/reveal.js#speaker-notes">speaker view</a>. It includes a timer, preview of the upcoming slide as well as your speaker notes.</p>
-					<p>Press the <em>S</em> key to try it out.</p>
+          <section>
+            <h4>Red, green, refactor.</h4>
+            <p>
+              <small>
+                Write a failing test, make it pass, clean up the mess.
+                <br />
+                Regularly check for architectural problems.
+              </small>
+            </p>
+          </section>
 
-					<aside class="notes">
-						Oh hey, these are some notes. They'll be hidden in your presentation, but you can see them if you open the speaker notes window (hit 's' on your keyboard).
-					</aside>
-				</section>
+          <section>
+            <h4>Write tests at these levels:</h4>
+            <small>
+              <ul>
+                <li><strong>Functional</strong> &mdash; components are wired together correctly.</li>
+                <li><strong>Unit</strong> &mdash; components work correctly, and are easy to use.</li>
+                <li><strong>Integration</strong> &mdash; this system works correctly with other systems.</li>
+              </ul>
+            </small>
+          </section>
 
-				<section>
-					<h2>Export to PDF</h2>
-					<p>Presentations can be <a href="https://github.com/hakimel/reveal.js#pdf-export">exported to PDF</a>, here's an example:</p>
-					<iframe src="//www.slideshare.net/slideshow/embed_code/42840540" width="445" height="355" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:3px solid #666; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe>
-				</section>
+          <section>
+            <h4>Write a failing functional test first.</h4>
+            <p>
+              <small>
+                Clearly express desired <strong>system</strong> behavior.
+                <br />
+                Ensure test failure messages are helpful.
+                <br />
+                Covers a single, small &ldquo;feature.&rdquo;
+              </small>
+            </p>
+          </section>
 
-				<section>
-					<h2>Global State</h2>
-					<p>
-						Set <code>data-state="something"</code> on a slide and <code>"something"</code>
-						will be added as a class to the document element when the slide is open. This lets you
-						apply broader style changes, like switching the page background.
-					</p>
-				</section>
+          <section>
+            <h4>Then write a failing unit test.</h4>
+            <p>
+              <small>
+                Clearly express desired component behavior.
+                <br />
+                Ensure test failure messages are helpful.
+              </small>
+            </p>
+          </section>
 
-				<section data-state="customevent">
-					<h2>State Events</h2>
-					<p>
-						Additionally custom events can be triggered on a per slide basis by binding to the <code>data-state</code> name.
-					</p>
-					<pre><code class="javascript" data-trim contenteditable style="font-size: 18px;">
-Reveal.addEventListener( 'customevent', function() {
-	console.log( '"customevent" has fired' );
-} );
-					</code></pre>
-				</section>
+          <section>
+            <h4>Write code to make the failing test pass.</h4>
+            <p>
+              <small>
+                Keep it simple.
+                <br />
+                Don’t write more than is enough to pass.
+              </small>
+            </p>
+          </section>
 
-				<section>
-					<h2>Take a Moment</h2>
-					<p>
-						Press B or . on your keyboard to pause the presentation. This is helpful when you're on stage and want to take distracting slides off the screen.
-					</p>
-				</section>
+          <section>
+            <h4>Refactor.</h4>
+            <p>
+              <small>
+                <span class="alert">Important, but often skipped!</span>
+                <br />
+                <br />
+                Qualities of clean code:
+                <br />
+                Minimal duplication, clarity, simplicity, loose coupling,
+                <br />
+                high cohesion, easy composition, context independence,
+                <br />
+                minimal &ldquo;code smells,&rdquo; etc.
+              </small>
+            </p>
+          </section>
 
-				<section>
-					<h2>Much more</h2>
-					<ul>
-						<li>Right-to-left support</li>
-						<li><a href="https://github.com/hakimel/reveal.js#api">Extensive JavaScript API</a></li>
-						<li><a href="https://github.com/hakimel/reveal.js#auto-sliding">Auto-progression</a></li>
-						<li><a href="https://github.com/hakimel/reveal.js#parallax-background">Parallax backgrounds</a></li>
-						<li><a href="https://github.com/hakimel/reveal.js#keyboard-bindings">Custom keyboard bindings</a></li>
-					</ul>
-				</section>
+          <section>
+            <h4>Rinse and repeat.</h4>
+            <p>
+              <small>
+                Build more unit tests until the code
+                <br />
+                is correct, and the functional test passes.
+              </small>
+            </p>
+          </section>
 
-				<section style="text-align: left;">
-					<h1>THE END</h1>
-					<p>
-						- <a href="http://slides.com">Try the online editor</a> <br>
-						- <a href="https://github.com/hakimel/reveal.js">Source code &amp; documentation</a>
-					</p>
-				</section>
+          <section>
+            <h4>What kinds of unit tests?</h4>
+            <small>
+              <ul>
+                <li><strong>Output</strong> &mdash; values returned for various inputs are correct.</li>
+                <li><strong>Side effects</strong> &mdash; observable changes to “outside” are correct.</li>
+                <li><strong>Boundaries</strong> &mdash; edge cases are handled correctly.</li>
+                <li><strong>Errors</strong> &mdash; abnormal events are handled correctly.</li>
+                <li><strong>Coverage</strong> &mdash; critical components are well tested.</li>
+              </ul>
+            </small>
+          </section>
 
-			</div>
+          <section>
+            <h4>Make tests fast, and expressive.</h4>
+            <p>
+              <small>
+                We’re running tests constantly.
+                <br />
+                The feedback loop must be fast.
+                <br />
+                Don’t sacrifice clarity (DAMP, not DRY).
+              </small>
+            </p>
+          </section>
 
-		</div>
+          <section>
+            <h4>Test units in isolation.</h4>
+            <p>
+              <small>
+                Like a science experiment.
+                <br />
+                Control variables and external contamination.
+                <br />
+                Results should be reproducible.
+                <br />
+                <br />
+                Use <strong>test doubles</strong> to:
+                <br />
+                increase speed, improve isolation, avoid I/O, improve design,
+                <br />
+                and discover component “communication protocols.”
+              </small>
+            </p>
+          </section>
 
-		<script src="lib/js/head.min.js"></script>
-		<script src="js/reveal.js"></script>
+          <section>
+            <h4>Test one small behavior per unit test.</h4>
+            <p>
+              <small>
+                One assertion, or a couple of test double expectations.
+                <br />
+                Makes failures much easier to troubleshoot.
+              </small>
+            </p>
+          </section>
+        </section>
 
-		<script>
+        <section>
+          <h3>Coda</h3>
+          <p>
+            <small>
+              REPL-driven development.
+              <br />
+              Property or generative testing.
+              <br />
+              Mutation and fuzz testing.
+              <br />
+              Transformation priority premise (Uncle Bob).
+            </small>
+          </p>
+        </section>
 
-			// Full list of configuration options available at:
-			// https://github.com/hakimel/reveal.js#configuration
-			Reveal.initialize({
-				controls: true,
-				progress: true,
-				history: true,
-				center: true,
+      </div>
 
-				transition: 'slide', // none/fade/slide/convex/concave/zoom
+    </div>
 
-				// Optional reveal.js plugins
-				dependencies: [
-					{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
-					{ src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
-					{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
-					{ src: 'plugin/highlight/highlight.js', async: true, condition: function() { return !!document.querySelector( 'pre code' ); }, callback: function() { hljs.initHighlightingOnLoad(); } },
-					{ src: 'plugin/zoom-js/zoom.js', async: true },
-					{ src: 'plugin/notes/notes.js', async: true }
-				]
-			});
+    <script src="lib/js/head.min.js"></script>
+    <script src="js/reveal.js"></script>
 
-		</script>
+    <script>
 
-	</body>
+      // Full list of configuration options available at:
+      // https://github.com/hakimel/reveal.js#configuration
+      Reveal.initialize({
+        controls: true,
+        progress: true,
+        history: true,
+        center: true,
+
+        transition: 'slide', // none/fade/slide/convex/concave/zoom
+
+        // Optional reveal.js plugins
+        dependencies: [
+          { src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+          { src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+          { src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+          { src: 'plugin/highlight/highlight.js', async: true, condition: function() { return !!document.querySelector( 'pre code' ); }, callback: function() { hljs.initHighlightingOnLoad(); } },
+          { src: 'plugin/zoom-js/zoom.js', async: true },
+          { src: 'plugin/notes/notes.js', async: true }
+        ]
+      });
+
+    </script>
+
+  </body>
 </html>
