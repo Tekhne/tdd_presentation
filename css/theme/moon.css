@@ -24,7 +24,7 @@ body {
   font-weight: normal;
   color: #93a1a1; }
 
-.alert, ::selection {
+.important, ::selection {
   color: #fff;
   background: #d33682;
   text-shadow: none; }

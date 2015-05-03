@@ -42,35 +42,10 @@
       <div class="slides">
 
         <section>
-          <h1>Test-Driven Development</h1>
+          <h1>Building Maintainable Software with TDD</h1>
           <p>
-            How I learned to stop worrying and love the workflow.
+            How I learned to stop worrying and love failure.
           </p>
-        </section>
-
-        <section>
-          <section>
-            <h3>Why do automated testing?</h3>
-          </section>
-
-          <section>
-            <h4>It's better than not.</h4>
-            <p>
-              <small>
-                We don't type and deploy without <strong>any</strong> tests.
-                <br />
-                Manual testing is expensive, tedious, and error-prone.
-                <br />
-                <br />
-                Automated testing minimizes those problems.
-                <br />
-                <br />
-                Test-driven development (TDD) is an effective
-                <br />
-                method of creating automated tests.
-              </small>
-            </p>
-          </section>
         </section>
 
         <section>
@@ -79,7 +54,16 @@
           </section>
 
           <section>
-            <h4>Red, green, refactor.</h4>
+            <h4>The definition.</h4>
+            <p>
+              <small>
+                TDD is test-driven development.
+              </small>
+            </p>
+          </section>
+
+          <section>
+            <h4>The practice.</h4>
             <p>
               <small>
                 <br />
@@ -92,10 +76,12 @@
           </section>
 
           <section>
-            <h4>Zen coding.</h4>
+            <h4>The state of mind.</h4>
             <p>
               <small>
-                Workflow and happiness are respected.
+                Tight feedback loops.
+                <br />
+                Small, safe, easy steps.
               </small>
             </p>
           </section>
@@ -107,15 +93,27 @@
           </section>
 
           <section>
-            <h4>Helps minimize lifespan of defects.</h4>
+            <h4>It's better than not.</h4>
             <p>
               <small>
-                Defects are usually caught at creation time.
+                We all test, even if it's just manual testing.
                 <br />
-                When they're the least painful and expensive.
+                Manual testing is expensive, tedious, and error-prone.
                 <br />
+                Automated testing minimizes those problems.
                 <br />
-                Code is more likely to be correct in production.
+                TDD is an effective way to create automated tests.
+              </small>
+            </p>
+          </section>
+
+          <section>
+            <h4>TDD minimizes the lifespan of defects.</h4>
+            <p>
+              <small>
+                Defects are usually caught at creation time,
+                <br />
+                when they're the least painful and expensive to fix.
               </small>
             </p>
           </section>
@@ -134,32 +132,32 @@
                 <tr>
                   <td><strong>Requirements</strong></td>
                   <td>1</td>
-                  <td class="alert">3</td>
-                  <td class="alert">5-10</td>
-                  <td class="alert">10</td>
-                  <td class="alert">10-100</td>
+                  <td class="important">3</td>
+                  <td class="important">5-10</td>
+                  <td class="important">10</td>
+                  <td class="important">10-100</td>
                 </tr>
                 <tr>
                   <td><strong>Architecture</strong></td>
                   <td>&mdash;</td>
                   <td>1</td>
-                  <td class="alert">10</td>
-                  <td class="alert">15</td>
-                  <td class="alert">25-100</td>
+                  <td class="important">10</td>
+                  <td class="important">15</td>
+                  <td class="important">25-100</td>
                 </tr>
                 <tr>
                   <td><strong>Construction</strong></td>
                   <td>&mdash;</td>
                   <td>&mdash;</td>
                   <td>1</td>
-                  <td class="alert">10</td>
-                  <td class="alert">10-25</td>
+                  <td class="important">10</td>
+                  <td class="important">10-25</td>
                 </tr>
               </tbody>
               <caption>
                 Cost multiplier for defect fixes based on creation and detection times.
                 <br />
-                —Source: Hewlett-Packard, IMB, Hughes Aircraft, TRW, et al 1976-2004
+                —Hewlett-Packard, IMB, Hughes Aircraft, TRW, et al 1976-2004
               </caption>
             </table>
           </section>
@@ -178,7 +176,7 @@
           </section>
 
           <section>
-            <h4>Increases test coverage.</h4>
+            <h4>TDD increases test coverage.</h4>
             <p>
               <small>
                 If we rarely write code except to make a failing test pass,
@@ -189,10 +187,10 @@
           </section>
 
           <section>
-            <h4>Helps improve design.</h4>
+            <h4>TDD improves code design.</h4>
             <p>
               <small>
-                Tests are the first consumer of components.
+                Tests are the first consumer of code.
                 <br />
                 If tests are easy to write, then code is usually easier to maintain.
                 <br />
@@ -202,7 +200,7 @@
           </section>
 
           <section>
-            <h4>Increases agility.</h4>
+            <h4>TDD increases agility.</h4>
 
             <p>
               <small>
@@ -216,7 +214,20 @@
           </section>
 
           <section>
-            <h4>Documents code.</h4>
+            <blockquote>
+              <small>
+                &ldquo;Don't touch anything that doesn't have coverage.
+                <br />
+                Otherwise, you're not refactoring; you're just changing sh*t.&rdquo;
+                <br />
+                <br />
+                &mdash;Hamlet D'Arcy
+              </small>
+            </blockquote>
+          </section>
+
+          <section>
+            <h4>TDD documents the code.</h4>
             <p>
               <small>
                 Examples of code in tests must be correct.
@@ -229,8 +240,7 @@
           </section>
 
           <section>
-            <h4>Helps us focus.</h4>
-
+            <h4>TDD helps us focus.</h4>
             <p>
               <small>
                 Failing tests tell us what to work on.
@@ -241,8 +251,7 @@
           </section>
 
           <section>
-            <h4>Helps us finish.</h4>
-
+            <h4>TDD helps us finish.</h4>
             <p>
               <small>
                 Passing tests tell us when we’re done.
@@ -255,7 +264,7 @@
           </section>
 
           <section>
-            <h4>Fosters predictable schedules.</h4>
+            <h4>TDD fosters predictable schedules.</h4>
             <p>
               <small>
                 Fewer defects means less debugging.
@@ -289,9 +298,23 @@
           </section>
 
           <section>
-            <h4>Build a &ldquo;walking skeleton&rdquo; first.</h4>
+            <h4>Red, green, refactor.</h4>
             <p>
               <small>
+                Write a failing test, make it pass, clean up the mess.
+                <br />
+                Regularly check for architectural problems.
+              </small>
+            </p>
+          </section>
+
+          <section>
+            <h4>Building new software?</h4>
+            <p>
+              <small>
+                Ensure you have a &ldquo;walking skeleton&rdquo; first.
+                <br />
+                <br />
                 Least amount of functionality that’s automatically
                 <br />
                 buildable, deployable, and testable end-to-end.
@@ -303,7 +326,22 @@
           </section>
 
           <section>
-            <h4>Build outside to inside, inputs to outputs.</h4>
+            <h4>Changing existing software?</h4>
+            <blockquote>
+              <small>
+                &ldquo;For each desired change, make the change easy
+                <br />
+                (warning: this may be hard), then make the easy change.&rdquo;
+                <br />
+                <br />
+                &mdash;Kent Beck
+              </small>
+            </blockquote>
+            <p><small>(This is &ldquo;pre-factoring.&rdquo;)</small></p>
+          </section>
+
+          <section>
+            <h4>Build from outside to inside, inputs to outputs.</h4>
             <p>
               <small>
                 The user’s needs should come first.
@@ -311,17 +349,6 @@
                 Helps ensure we only build components users value.
                 <br />
                 (“User” could mean “developer,” or “computer.”)
-              </small>
-            </p>
-          </section>
-
-          <section>
-            <h4>Red, green, refactor.</h4>
-            <p>
-              <small>
-                Write a failing test, make it pass, clean up the mess.
-                <br />
-                Regularly check for architectural problems.
               </small>
             </p>
           </section>
@@ -351,10 +378,10 @@
           </section>
 
           <section>
-            <h4>Then write a failing unit test.</h4>
+            <h4>Then write a failing {unit, integration} test.</h4>
             <p>
               <small>
-                Clearly express desired component behavior.
+                Clearly express desired <strong>{component, interaction}</strong> behavior.
                 <br />
                 Ensure test failure messages are helpful.
               </small>
@@ -362,7 +389,7 @@
           </section>
 
           <section>
-            <h4>Write code to make the failing test pass.</h4>
+            <h4>Then write code to make the failing test pass.</h4>
             <p>
               <small>
                 Keep it simple.
@@ -373,10 +400,13 @@
           </section>
 
           <section>
-            <h4>Refactor.</h4>
+            <h4>Then refactor.</h4>
             <p>
               <small>
-                <span class="alert">Important, but often skipped!</span>
+                Make the code clean.
+                <br />
+                <br />
+                <span class="important">Important, but often skipped!</span>
                 <br />
                 <br />
                 Qualities of clean code:
@@ -394,7 +424,7 @@
             <h4>Rinse and repeat.</h4>
             <p>
               <small>
-                Build more unit tests until the code
+                Build more {unit, integration} tests until the code
                 <br />
                 is correct, and the functional test passes.
               </small>
@@ -402,11 +432,11 @@
           </section>
 
           <section>
-            <h4>What kinds of unit tests?</h4>
+            <h4>What kinds of {unit, integration} tests?</h4>
             <small>
               <ul>
                 <li><strong>Output</strong> &mdash; values returned for various inputs are correct.</li>
-                <li><strong>Side effects</strong> &mdash; observable changes to “outside” are correct.</li>
+                <li><strong>Side effects</strong> &mdash; changes observable to “outside” are correct.</li>
                 <li><strong>Boundaries</strong> &mdash; edge cases are handled correctly.</li>
                 <li><strong>Errors</strong> &mdash; abnormal events are handled correctly.</li>
                 <li><strong>Coverage</strong> &mdash; critical components are well tested.</li>
@@ -438,17 +468,17 @@
                 Results should be reproducible.
                 <br />
                 <br />
-                Use <strong>test doubles</strong> to:
+                Use <strong>test doubles</strong> (mocks, stubs, spies, etc.) to:
                 <br />
-                increase speed, improve isolation, avoid I/O, improve design,
+                increase speed, improve isolation, avoid I/O,
                 <br />
-                and discover component “communication protocols.”
+                improve design, and discover collaborator &ldquo;protocols.&rdquo;
               </small>
             </p>
           </section>
 
           <section>
-            <h4>Test one small behavior per unit test.</h4>
+            <h4>Test one small behavior per {unit, integration} test.</h4>
             <p>
               <small>
                 One assertion, or a couple of test double expectations.
