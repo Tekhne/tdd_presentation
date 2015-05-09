@@ -57,7 +57,7 @@
             <h4>The definition.</h4>
             <p>
               <small>
-                TDD is test-driven development.
+                TDD stands for test-driven development.
               </small>
             </p>
           </section>
@@ -76,12 +76,14 @@
           </section>
 
           <section>
-            <h4>The state of mind.</h4>
+            <h4>The mindset.</h4>
             <p>
               <small>
+                Embrace failure.
+                <br />
                 Tight feedback loops.
                 <br />
-                Small, safe, easy steps.
+                Small, easy steps.
               </small>
             </p>
           </section>
@@ -176,7 +178,7 @@
           </section>
 
           <section>
-            <h4>TDD increases test coverage.</h4>
+            <h4>TDD increases coverage.</h4>
             <p>
               <small>
                 If we rarely write code except to make a failing test pass,
@@ -187,12 +189,12 @@
           </section>
 
           <section>
-            <h4>TDD improves code design.</h4>
+            <h4>TDD improves design.</h4>
             <p>
               <small>
                 Tests are the first consumer of code.
                 <br />
-                If tests are easy to write, then code is usually easier to maintain.
+                If tests are easy to write, then code is usually easier to use.
                 <br />
                 Tests enable safe refactoring both now and later.
               </small>
@@ -216,7 +218,7 @@
           <section>
             <blockquote>
               <small>
-                &ldquo;Don't touch anything that doesn't have coverage.
+                &ldquo;Don't touch anything that doesn't have [test] coverage.
                 <br />
                 Otherwise, you're not refactoring; you're just changing sh*t.&rdquo;
                 <br />
@@ -312,7 +314,7 @@
             <h4>Building new software?</h4>
             <p>
               <small>
-                Ensure you have a &ldquo;walking skeleton&rdquo; first.
+                Build a &ldquo;walking skeleton&rdquo; first.
                 <br />
                 <br />
                 Least amount of functionality that’s automatically
@@ -348,7 +350,7 @@
                 <br />
                 Helps ensure we only build components users value.
                 <br />
-                (“User” could mean “developer,” or “computer.”)
+                (“User” could mean “developer.”)
               </small>
             </p>
           </section>
@@ -409,7 +411,7 @@
                 <span class="important">Important, but often skipped!</span>
                 <br />
                 <br />
-                All of software engineering is in scope, but &hellip;
+                Possibilities include all of software engineering.
               </small>
             </p>
           </section>
@@ -420,10 +422,10 @@
               <ul>
                 <li>Good names.</li>
                 <li>Short methods.</li>
-                <li>Only a few methods per class.</li>
+                <li>Short classes.</li>
                 <br />
                 <li>Do one thing.</li>
-                <li>Don't repeat yourself (DRY).</li>
+                <li>Don't repeat yourself.</li>
                 <li>Uniform levels of abstraction.</li>
               </ul>
             </small>
@@ -441,7 +443,7 @@
           </section>
 
           <section>
-            <h4>What kinds of {unit, integration} tests?</h4>
+            <h4>What kinds of tests?</h4>
             <small>
               <ul>
                 <li><strong>Output</strong> &mdash; values returned for various inputs are correct.</li>
@@ -461,7 +463,7 @@
                 <br />
                 The feedback loop must be fast.
                 <br />
-                Don’t sacrifice clarity (DAMP, not DRY).
+                Don’t sacrifice clarity.
               </small>
             </p>
           </section>
@@ -479,7 +481,7 @@
                 <br />
                 Use <strong>test doubles</strong> (mocks, stubs, spies, etc.) to:
                 <br />
-                increase speed, improve isolation, avoid I/O,
+                improve isolation, increase speed, avoid I/O,
                 <br />
                 improve design, and discover collaborator &ldquo;protocols.&rdquo;
               </small>
@@ -487,7 +489,7 @@
           </section>
 
           <section>
-            <h4>Test one small behavior per {unit, integration} test.</h4>
+            <h4>Test one small behavior per test.</h4>
             <p>
               <small>
                 One assertion, or a couple of test double expectations.
